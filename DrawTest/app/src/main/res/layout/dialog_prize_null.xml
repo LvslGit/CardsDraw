@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:background="@mipmap/prize_dialog_background_link"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iamgeView_PrizeNullDialog_Close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_prize_dialog_close"
+        android:padding="10dp"
+        android:src="@mipmap/prize_dialog_close" />
+
+    <ImageView
+        android:id="@+id/imageView_PrizeNullDialog_Image"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/prize_dialog_image_yuanbao" />
+
+    <TextView
+        android:id="@+id/textView_PrizeNullDialog_Title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="哎呀,就差那么一点点"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_PrizeNullDialog_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/background_prize_dialog_text"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxWidth="200dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="别灰心,再来玩一次吧!"
+        android:textColor="#fca805"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_PrizeNullDialog_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@mipmap/prize_dialog_button"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="再来一次"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

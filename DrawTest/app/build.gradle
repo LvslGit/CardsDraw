@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "base.lvsl.com.drawtest"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 本地集成arr
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation(name: 'sunlight-1.5.1', ext: 'aar')
+
+    implementation 'com.squareup.picasso:picasso:2.5.2' // Picasso图片加载
+    implementation 'org.xutils:xutils:3.5.0'            // xUtils3.0  使用注解模块
+    implementation 'com.alibaba:fastjson:1.2.44'        // FastJson Json数据解析
+    // implementation 'com.github.yalantis:ucrop:2.2.1' // UCrop 图片剪裁
+    implementation 'com.bigkoo:convenientbanner:2.0.5'  // Banners 轮播图
+    implementation 'com.jwenfeng.pulltorefresh:library:1.0.3'   // 下拉刷新 上拉加载框架
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'  // 位置选择器
+    // implementation 'me.grantland:autofittextview:0.2.+'         // 根据文字长度改变字体大小的控件
+    // implementation 'com.jaeger.statusbarutil:library:1.5.0'     // 沉浸式状态栏
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'       // 腾讯Bugly latest.release最新版
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'   // 微信相关
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'    // 展示GIF图片
+
+
+    // 旋转动画
+    implementation 'com.yayandroid:Rotatable:1.1.1'
+
+}
