@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout_Title_Draw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/imageView_DrawTitle_Return"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@mipmap/user_back" />
+
+        <TextView
+            android:id="@+id/textView_DrawTitle_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="好礼送不停"
+            android:textColor="#222"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_DrawTitle"
+                android:src="@mipmap/mine_hb"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#dbdbdb" />
+
+    </RelativeLayout>
+
+    <!-- 背景图 -->
+    <ImageView
+        android:id="@+id/imageView_Draw_Background"
+        android:background="@mipmap/bg_draw"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 规则 -->
+    <ImageView
+        android:id="@+id/imageView_Draw_Rule"
+        android:src="@mipmap/prize_rule"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 我的奖品 -->
+    <ImageView
+        android:id="@+id/imageView_Draw_MinePrize"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <!-- 剩余抽奖次数 -->
+    <TextView
+        android:id="@+id/textView_Draw_Nums"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:text="今日剩余抽奖次数 8 次"
+        android:layout_marginTop="230dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <!-- 抽奖 View -->
+    <GridView
+        android:id="@+id/drawview_Draw_Detail"
+        android:gravity="center"
+        android:verticalSpacing="20dp"
+        android:layout_marginTop="260dp"
+        android:padding="10dp"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Prize_Draw"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@mipmap/cup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@mipmap/bear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@mipmap/gift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@mipmap/hb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@mipmap/phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_Cards_Animation"
+        android:visibility="gone"
+        android:src="@mipmap/xg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_width="220dp"
+        android:layout_height="260dp" />
+
+</RelativeLayout>
